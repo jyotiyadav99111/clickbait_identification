@@ -26,7 +26,7 @@ The distribution of top most 30 words is presented below:
 ##### 2. Non-clickbaits
 ![link of non_clickbait_freq](https://github.com/jyotiyadav99111/clickbait_identification/blob/main/images/non_clickbait_samples.png)
 
-Stats clearly depict that top 30 words contain punctuations for clickbait wich could be a distinguishing factor.
+Stats clearly depict that top 30 words contain quotation(") and integrogative words(what, how, who) in order to make headlines attractive. This is one of the distinguished factor analysed by the model for classification. 
 
 # How to run the model
 
