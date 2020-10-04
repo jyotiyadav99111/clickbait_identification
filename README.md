@@ -31,8 +31,8 @@ Stats clearly depict that top 30 words contain quotation(") and integrogative wo
 # How to run the model
 
 1. Clone the repository
+    Required python Version = 3.6 and below 3.7
 2. Install all the requirements using the following command in terminal:
-   Required python Version = 3.6 and below 3.7
 ``` pip install -r requirements.txt```
 3. Once the required packages are installed. Run the following file through terminal:
 ```python predict.py```
