@@ -10,7 +10,10 @@ with open('tokenizer.pickle', 'rb') as handle:
     tokenizer = pickle.load(handle)
 
 # text to predict for
-txt = ["A Fencer Strives to Crack a Saber Ceiling"]
+txt = []
+heading = input("Please enter the article heading here: ")
+txt.append(heading)
+#txt = ["A Fencer Strives to Crack a Saber Ceiling"]
 prediction = text_for_pred(tokenizer, txt, model)
 
 if prediction[0][0] > prediction[0][1]:

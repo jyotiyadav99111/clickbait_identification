@@ -139,6 +139,6 @@ with open('tokenizer.pickle', 'wb') as handle:
 train_headings_padded = apply_tokenizer(tokenizer, train_headings)
 val_headings_padded = apply_tokenizer(tokenizer, val_headings)
 
-#summary, history = LSTM_model(5, train_headings_padded, train_labels, val_headings_padded, val_labels)
-#plot_graphs(history, 'loss')
+summary, history = LSTM_model(5, train_headings_padded, train_labels, val_headings_padded, val_labels)
+plot_graphs(history, 'loss')
 
