@@ -1,4 +1,5 @@
 import csv
+import pickle
 import random
 import numpy as np
 import tensorflow as tf
@@ -124,17 +125,20 @@ print("*****************************", len(data_X))
 data_X, label_Y = data_loading(heading=data_X, labels = label_Y, path = "data/non_clickbait_data", label_value = 0)
 print("*****************************", len(data_X))
 
-
-
 train_headings, train_labels, val_headings, val_labels = train_val_split(data_X, label_Y)
 train_labels= np.array(train_labels)
 val_labels= np.array(val_labels)
 
 tokenizer = tokenizer(train_headings)
+
+# Save tokenizer to use in predict.py file
+with open('tokenizer.pickle', 'wb') as handle:
+    pickle.dump(tokenizer, handle, protocol=pickle.HIGHEST_PROTOCOL)
+
+
 train_headings_padded = apply_tokenizer(tokenizer, train_headings)
 val_headings_padded = apply_tokenizer(tokenizer, val_headings)
 
-summary, history = LSTM_model(100, train_headings_padded, train_labels, val_headings_padded, val_labels)
+#summary, history = LSTM_model(5, train_headings_padded, train_labels, val_headings_padded, val_labels)
+#plot_graphs(history, 'loss')
 
-#plot_graphs(history, 'accuracy')
-plot_graphs(history, 'loss')
