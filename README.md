@@ -1,7 +1,8 @@
 # clickbait_identification
 An application of NLP techniques in order to identify clickbaits 
 
-![Image of Clickbait](https://github.com/jyotiyadav99111/clickbait_identification/blob/main/images/clickbait-advertising-spam-icons-mobile-phone-screen-internet-business-concept-153257728.jpg)
+![mael-balland-us_uPGWimAs-unsplash](https://user-images.githubusercontent.com/30169240/126322900-45f5622f-e57e-41d6-acf3-fe4905989a90.jpg)
+
 
 [Clickbait](https://en.wikipedia.org/wiki/Clickbait) is very common and people tend to fall a victim very easily. They are merely to grab attention and make users click on the link. Information present in on such links are often misleading and deceptive.
 
